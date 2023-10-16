@@ -1,0 +1,45 @@
+<header>
+  <h2 class="heading">Register</h2>
+  <div class="prediction-btn"><a href=" http://localhost:5173/">Rent Prediction</a></div>
+</header>
+<form action="/customer/signup" method="post" class="form signinForm">
+  <div class="formGrid">
+    <label for="" class="searchLabel">Name</label>
+    <input type="text" name="name" id="" class="searchField" />
+  </div>
+  <div class="formGrid">
+    <label for="" class="searchLabel">Phone</label>
+    <input
+      type="tel"
+      pattern="[0-9]{10}"
+      name="phoneNumber"
+      id=""
+      class="searchField"
+    />
+  </div>
+  <div class="formGrid">
+    <label for="" class="searchLabel">Email</label>
+    <input type="email" name="email" id="" class="searchField" />
+  </div>
+  <div class="formGrid">
+    <label for="" class="searchLabel">Password</label>
+    <input type="password" name="password" id="" class="searchField" />
+  </div>
+
+  <button type="submit" class="signin customerSignin">SignUP</button>
+</form>
+<div class="warning">
+  <%if(emptyEmail==true){ %>
+  <div>Please Enter Email</div>
+
+  <% } %> <%if(emptyPassword==true){ %>
+  <div>Please Enter Password</div>
+
+  <% } %> <%if(emptyName==true){ %>
+  <div>Please Enter Name</div>
+
+  <% } %> <%if(emptyPhoneNumber==true){ %>
+  <div>Please Enter Phone Number</div>
+
+  <% } %>
+</div>

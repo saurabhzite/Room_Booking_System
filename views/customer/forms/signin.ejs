@@ -1,0 +1,32 @@
+<header>
+  <h2 class="heading">Login</h2>
+  <div class="prediction-btn"><a href=" http://localhost:5173/">Rent Prediction</a></div>
+</header>
+<div class="form signinForm">
+  <form action="/customer/login" method="post">
+    <div class="formGrid">
+      <label for="" class="searchLabel">Email</label>
+      <input type="email" name="email" id="" class="searchField" />
+    </div>
+    <div class="formGrid">
+      <label for="" class="searchLabel">Password</label>
+      <input type="password" name="password" id="" class="searchField" />
+    </div>
+
+    <button type="submit" class="signin customerSignin">Login</button>
+  </form>
+  <form action="/customer/signup" method="get">
+    <button type="submit" class="do-not-have customerSignin">
+      Do not have an account
+    </button>
+  </form>
+</div>
+<div class="warning">
+  <%if(emptyEmail==true){ %>
+  <div>Please Enter Email</div>
+
+  <% } %> <%if(emptyPassword==true){ %>
+  <div>Please Enter Password</div>
+
+  <% } %>
+</div>

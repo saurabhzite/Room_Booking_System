@@ -1,0 +1,41 @@
+<%- include("../../partials/customerHeader.ejs") %>
+<div class="viewContainer">
+  <% if(bookedSuccessfully){ %>
+  <div class="bookingSuccess"> &#9989 Booked Successfully !!!</div>
+  <% } %>
+  <h2><%= room.name %></h2>
+  <img width="600" height="400" src="<%= room.image1Path %>" />
+  <img width="600" height="400" src="<%= room.image2Path %>" />
+  <div class="customerViewContainer">
+    <section>
+      <div><b>Room Type : </b> <%= room.roomType %></div>
+      <div><b>Price : </b> <%= room.price %></div>
+      <div>
+        <b>Description:</b>
+        <pre><%= room.description %></pre>
+      </div>
+      <div><b>Address : </b> <%= room.address %></div>
+    </section>
+
+    <div>
+      <% if(room.isAvailable){ %>
+      <div style="color: green">Room is Availabe</div>
+      <form action="/customer/book/<%= room.id %>?_method=PUT" method="POST">
+        <div class="singleField">
+          <label for="checkin">Check-In</label>
+          <input type="date" id="checkin" name="checkinDate" />
+        </div>
+        <div class="singleField">
+          <label for="checkout">Check-Out</label>
+          <input type="date" id="checkout" name="checkoutDate" />
+        </div>
+
+        <button type="submit" class="book-btn">Book</button>
+      </form>
+
+      <% } %> <% if(!room.isAvailable){ %>
+      <div style="color: red">Room not Availabe</div>
+      <% } %>
+    </div>
+  </div>
+</div>
