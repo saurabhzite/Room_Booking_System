@@ -1,0 +1,8 @@
+<%- include("../partials/header.ejs") %> <%- include("../partials/logout.ejs")
+%>
+<h2 class="subHeading">New Room</h2>
+<form action="/rooms" method="POST" class="form">
+  <%- include("_form_fields") %>
+  <a href="/rooms"><div class="btnLink">Cancel</div></a>
+  <button type="submit" class="btn">Create</button>
+</form>

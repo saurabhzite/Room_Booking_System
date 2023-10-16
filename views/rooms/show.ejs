@@ -1,0 +1,37 @@
+<%- include("../partials/header.ejs") %> <%- include("../partials/logout.ejs")
+%>
+<div class="viewContainer">
+  <div style="display: flex; justify-content: space-around; width: 15rem">
+    <a href="/rooms/<%= room.id %>/edit"
+      ><div class="smallBtnLink">Edit</div></a
+    >
+    <%- include('../partials/deleteForm', { url: `/rooms/${room.id}` }) %>
+  </div>
+  <h2><%= room.name %></h2>
+  <img width="600" height="400" src="<%= room.image1Path %>" />
+  <img width="600" height="400" src="<%= room.image2Path %>" />
+  <section class="viewSection">
+    <div>
+      <div><b>Owner : </b> <%= room.owner.name %></div>
+      <div><b>Room Type : </b> <%= room.roomType %></div>
+      <div><b>Price : </b> <%= room.price %></div>
+      <div>
+        <b>Description:</b>
+        <pre><%= room.description %></pre>
+      </div>
+      <div><b>Address : </b> <%= room.address %></div>
+    </div>
+    <div>
+      <div><b>Availabe : </b> <%= room.isAvailable %></div>
+      <% if(!room.isAvailable){ %>
+      <div><b>Check-In Date : </b> <%= room.checkinDate %></div>
+      <div><b>Check-Out Date : </b> <%= room.checkoutDate %></div>
+      <div><b>Customer Name : </b> <%= roomWithCustomer.customer.name %></div>
+      <div><b>Customer Email : </b> <%= roomWithCustomer.customer.email %></div>
+      <div>
+        <b>Customer Phone : </b> <%= roomWithCustomer.customer.phoneNumber %>
+      </div>
+      <% } %>
+    </div>
+  </section>
+</div>

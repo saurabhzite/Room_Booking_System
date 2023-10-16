@@ -1,0 +1,71 @@
+<div class="formGrid">
+  <label for="name" class="searchLabel">Name</label>
+  <input type="text" name="name" value="<%=room.name  %>" class="searchField" />
+</div>
+<div class="formGrid">
+  <label for="owner" class="searchLabel">Owner</label>
+  <select name="owner" class="searchField">
+    <% owners.forEach((owner)=>{ %> <% if(owner.id === room.owner){ %>
+    <option selected label="<%= owner.name %>" value="<%= owner.id %>"></option>
+    <% } else{%>
+    <option label="<%=owner.name %>" value="<%= owner.id %>"></option>
+    <% } %> <% }) %>
+  </select>
+</div>
+
+<div class="formGrid">
+  <label for="roomType" class="searchLabel">Room Type</label>
+  <select name="roomType" class="searchField">
+    <% roomTypes.forEach((type)=>{ %> <% if(type==room.roomType){ %>
+    <option
+      selected
+      label="<%= room.roomType  %>"
+      value="<%= room.roomType %>"
+    ></option>
+    <% } else{ %>
+    <option label="<%= type %>" value="<%= type %>"></option>
+    <% } %> <% }) %>
+  </select>
+</div>
+<div class="formGrid">
+  <label for="price" class="searchLabel">Price</label>
+  <input
+    type="number"
+    name="price"
+    value="<%=room.price  %>"
+    class="searchField"
+  />
+</div>
+<div class="formGrid">
+  <label for="state" class="searchLabel">State</label>
+  <input
+    type="text"
+    name="state"
+    value="<%=room.state  %>"
+    class="searchField"
+  />
+</div>
+<div class="formGrid">
+  <label for="city" class="searchLabel">City</label>
+  <input type="text" name="city" value="<%=room.city  %>" class="searchField" />
+</div>
+<div class="formGrid">
+  <label for="address" class="searchLabel">Address</label>
+  <textarea name="address" cols="30" rows="5" class="textField">
+<%= room.address %> </textarea
+  >
+</div>
+<div class="formGrid">
+  <label for="image1" class="searchLabel">Image1</label>
+  <input type="file" name="image1" class="filepond" />
+</div>
+<div class="formGrid">
+  <label for="image2" class="searchLabel">Image2</label>
+  <input type="file" name="image2" class="filepond" />
+</div>
+<div class="formGrid">
+  <label for="description" class="searchLabel">Description</label>
+  <textarea name="description" cols="30" rows="10" class="textField">
+<%= room.description %> </textarea
+  >
+</div>

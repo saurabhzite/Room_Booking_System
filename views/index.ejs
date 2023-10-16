@@ -1,0 +1,19 @@
+<%- include("./partials/header.ejs") %> <%- include("./partials/logout.ejs") %>
+<h2 class="subHeading">Recently Added</h2>
+<div class="cardsContainer">
+  <% rooms.forEach(room=>{ %> <% let avail;if(room.isAvailable){
+  avail="available"}else{ avail="notAvailable"} %>
+  <a href="/rooms/<%= room.id %>" class="card <%= avail %>">
+    <div>
+      <img src="<%= room.image1Path  %> " height="200" width="300" />
+    </div>
+    <div>
+      <div>Room Name: <%= room.name %></div>
+      <div>Room Type: <%= room.roomType %></div>
+      <div>Price/day: <%= room.price %></div>
+      <div>City: <%= room.city %></div>
+    </div>
+  </a>
+
+  <% }) %>
+</div>
