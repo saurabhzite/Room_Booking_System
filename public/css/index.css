@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@1,700&family=Roboto+Slab:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+a {
+  text-decoration: none;
+  color: #453227;
+}
+.navBar {
+  background-color: #decec7;
+  height: 3.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-radius: 20px;
+  width: 95%;
+  margin: 1rem auto;
+}
+.navigation {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigation li {
+  margin: 0 30px 0 30px;
+}
+.navigation li :hover {
+  border-bottom: 2px solid #453227;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+nav a {
+  color: #453227;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1020px;
+  margin: 5px auto;
+  gap: 1.2rem;
+}
+.card {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  text-decoration: none;
+  color: #453227;
+}
+.card img {
+  border-radius: 0.2rem;
+}
+.title {
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  color: #978107;
+}
+.subHeading {
+  margin: 2rem 0 2rem 3rem;
+}
+.viewSection {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 35vw 55vw;
+  background-color: white;
+  border-radius: 1rem;
+  font-family: "Roboto Slab", serif;
+}
+.viewSection > div > div {
+  margin: 1rem 0rem;
+}
