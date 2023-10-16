@@ -1,0 +1,194 @@
+.btn {
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: #907261;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btnLink {
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: #907261;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.searchField {
+  width: 25rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  padding-left: 0.5rem;
+}
+.searchLabel {
+  width: 8rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.form {
+  margin: 2rem 40rem 2rem 4rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.form div {
+  margin-bottom: 1rem;
+}
+.ownerCard {
+  display: grid;
+  grid-template-columns: 6rem 8rem 15rem 5rem 5rem 5rem;
+  padding: 1rem;
+  border-radius: 0.5 rem;
+  background-color: white;
+  margin: 1rem 4rem;
+  max-width: 800px;
+  column-gap: 0.5rem;
+  font-weight: bold;
+}
+.smallBtnLink {
+  width: 5rem;
+  height: 2rem;
+  background-color: #907261;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  padding-left: 1.2rem;
+  padding-top: 0.2rem;
+}
+
+.smallBtnLink {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.smallBtn {
+  width: 5rem;
+  height: 2rem;
+  background-color: #907261;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: 10rem 20rem;
+}
+.cardBtn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0.2rem 0;
+}
+.searchCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.textField {
+  width: 25rem;
+  height: 5rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  padding-left: 0.5rem;
+}
+.filepond {
+  width: 25rem;
+  height: 25rem;
+}
+.viewContainer {
+  padding: 2rem;
+}
+.viewContainer h2 {
+  font-size: 3rem;
+  margin: 1rem;
+  color: #5b4639;
+  text-decoration: underline;
+}
+.viewContainer img {
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.viewContainer section {
+  margin: 1rem 2rem;
+  font-size: 1.2rem;
+}
+.ownerViewContainer {
+  margin: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logout-btn {
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  background-color: rgb(247, 82, 82);
+  border: none;
+  border-radius: 1rem;
+  width: 6rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 76rem;
+}
+.signin {
+  background-color: white;
+  color: blue;
+  border-radius: 1rem;
+  width: 18rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-left: 10rem;
+  font-size: 20px;
+  border: 1px solid blue;
+}
+.signinForm {
+  margin: 5rem auto 5rem auto;
+  width: 41rem;
+}
+.warning {
+  color: red;
+  margin-left: 38rem;
+}
+.do-not-have{
+  background-color: white;
+  color: rgb(255, 0, 106);
+  border-radius: 1rem;
+  width: 18rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-left: 10rem;
+  font-size: 20px;
+   border: 1px solid rgb(255, 0, 106);
+}
+
+.heading{
+  text-align: center;
+  font-size: 45px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+header{
+  position: relative;
+}
+header div{
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: 5px;
+  color:  rgb(3, 73, 3);
+  background-color: rgb(122, 216, 122);
+  border: 2px solid rgb(5, 70, 5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 170px;
+  top: -10px;
+}

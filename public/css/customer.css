@@ -1,0 +1,71 @@
+.customerForm {
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  padding: 4rem;
+  background-color: white;
+  border: 2px solid yellow;
+  border-radius: 1.5rem;
+  margin: 4rem 1rem;
+}
+.customerLogout-btn {
+  background-color: white;
+  color: red;
+}
+.customer-btn {
+  background-color: rgb(26, 26, 141);
+}
+.customerHeader {
+  background-color: rgb(26, 26, 141);
+  height: 7rem;
+}
+.customerHeader .end {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.customerHeader .middle {
+  color: rgb(187, 187, 220);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.titleName {
+  padding: 1rem 1rem 0 1rem;
+}
+.available {
+  border-bottom: 2px solid green;
+}
+.notAvailable {
+  border-bottom: 2px solid red;
+}
+.customerViewContainer {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 60vw 30vw;
+  border-radius: 1rem;
+}
+.customerViewContainer > div {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.book-btn {
+  background-color: rgb(26, 26, 141);
+  width: 8rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.singleField {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 1rem;
+}
+.bookingSuccess {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: green;
+}
+
+
