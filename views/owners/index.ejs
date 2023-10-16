@@ -1,0 +1,27 @@
+<%- include("../partials/header.ejs") %> <%- include("../partials/logout.ejs")
+%>
+<h2 class="subHeading">Search Owners</h2>
+<form action="/owners" method="GET" class="form">
+  <label for="name" class="searchLabel">Name</label>
+  <input
+    type="text"
+    name="name"
+    value="<%= searchOptions.name  %>"
+    class="searchField"
+  />
+  <button type="submit" class="btn">Search</button>
+</form>
+<br />
+<% owners.forEach(owner => { %>
+<div class="ownerCard">
+  <div><%= owner.name %></div>
+  <div><%= owner.phone %></div>
+  <div><%= owner.email %></div>
+  <a href="/owners/<%= owner.id %>"><div class="smallBtnLink">View</div></a>
+  <a href="/owners/<%= owner.id %>/edit"
+    ><div class="smallBtnLink">Edit</div></a
+  >
+
+  <%- include('../partials/deleteForm', { url: `/owners/${owner.id}` }) %>
+</div>
+<% })%>

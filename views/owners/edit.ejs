@@ -1,0 +1,8 @@
+<%- include("../partials/header.ejs") %> <%- include("../partials/logout.ejs")
+%>
+<h2 class="subHeading">Edit Owner</h2>
+<form action="/owners/<%= owner.id %>?_method=PUT" method="POST" class="form">
+  <%- include('_form_fields') %>
+  <a href="/owners/<%= owner.id %>"><div class="btnLink">Cancel</div></a>
+  <button type="submit" class="btn">Update</button>
+</form>
