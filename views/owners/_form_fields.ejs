@@ -1,0 +1,28 @@
+<div class="formGrid">
+  <label for="name" class="searchLabel">Name</label>
+  <input
+    type="text"
+    name="name"
+    value="<%= owner.name %>"
+    class="searchField"
+  />
+</div>
+<div class="formGrid">
+  <label for="phone" class="searchLabel">Phone No.</label>
+  <input
+    type="tel"
+    name="phone"
+    pattern="[0-9]{10}"
+    value="<%= owner.phone %>"
+    class="searchField"
+  />
+</div>
+<div class="formGrid">
+  <label for="email" class="searchLabel">Email</label>
+  <input
+    type="email"
+    name="email"
+    value="<%= owner.email %>"
+    class="searchField"
+  />
+</div>

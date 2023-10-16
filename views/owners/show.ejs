@@ -1,0 +1,25 @@
+<%- include("../partials/header.ejs") %> <%- include("../partials/logout.ejs")
+%>
+<div style="display: flex; justify-content: space-around; width: 15rem">
+  <a href="/owners/<%= owner.id %>/edit"
+    ><div class="smallBtnLink">Edit</div></a
+  >
+  <%- include('../partials/deleteForm', { url: `/owners/${owner.id}` }) %>
+</div>
+<div class="ownerViewContainer">
+  <p>Name : <%= owner.name %></p>
+  <p>Phone No. : <%= owner.phone %></p>
+  <p>Email : <%= owner.email %></p>
+</div>
+<h2 class="subHeading">Rooms Of Owner :</h2>
+<section class="cardsContainer">
+  <% if (roomsOfOwner.length > 0) { %> <% roomsOfOwner.forEach(room => { %>
+  <a class="card" href="/rooms/<%= room.id  %> ">
+    <img height="200" width="300" src="<%= room.image1Path %>" />
+    <div>Room Name: <%= room.name %></div>
+    <div>Room Type: <%= room.roomType %></div>
+    <div>Price/day: <%= room.price %></div>
+    <div>City: <%= room.city %></div>
+  </a>
+  <% }) %> <% } %>
+</section>
